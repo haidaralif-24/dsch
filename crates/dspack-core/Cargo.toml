@@ -1,0 +1,18 @@
+[package]
+name = "dspack-core"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+# Dependencies are added by scaffold.sh via `cargo add`.
+[dependencies]
+ignore = "0.4.34"
+serde = { version = "1.0.229", features = ["derive"] }
+similar = "3.2.1"
+tempfile = "3.27.0"
+thiserror = "2.0.21"
+toml = "1.2.1"
+
+[dev-dependencies]
+insta = "1.49.0"
+proptest = "1.12.0"

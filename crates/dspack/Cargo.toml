@@ -1,0 +1,17 @@
+[package]
+name = "dspack"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+# Dependencies are added by scaffold.sh via `cargo add`.
+[dependencies]
+anyhow = "1.0.104"
+arboard = "3.7.0"
+clap = { version = "4.6.7", features = ["derive"] }
+dialoguer = "0.12.0"
+dspack-core = { path = "../dspack-core" }
+nucleo = "0.5.0"
+owo-colors = "4.4.0"
+ratatui = "0.29"
+tui-textarea = "0.7.0"
